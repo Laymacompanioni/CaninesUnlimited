@@ -29,11 +29,75 @@ img{
     margin: 0 auto;
     padding: 0 1rem;
 }
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0.6rem 0;
+    line-height: 1.25;
+    font-weight: bold;
+}
+
 .center{
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
+/* header */
 header{
-    
+    background-image: linear-gradient(45deg, rgb(83, 103, 126), transparent),url(/assets/pexels-tima-miroshnichenko-6131568.jpg) ;
+    min-height:100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
 }
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 999;
+}
+.logo-brand-toggle{
+    font-size: 1.65rem;
+    padding: 0.5rem 0;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+.navbar-brand{
+    font-weight: bolder;
+    color: #88CAF6;
+}
+.navbar-brand span{
+    color: #B6D98E;
+}
+.navbar-nav{
+    margin: 0.2rem 0 0.6rem 0;
+}
+
+.nav-item{
+padding: 0.6rem 0;
+}
+
+.nav-link{
+        text-transform: uppercase;
+        font-size: 16pt;
+        font-weight: bold;
+        color: #88CAF6;
+}
+.nav-link:hover{
+    color: #B6D98E;
+}
+.hero-div{
+    flex: 1;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 100%;
+}
+@media screen and (min-width: 992px){
+   
+}
+    
