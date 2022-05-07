@@ -52,6 +52,7 @@ header{
     flex-direction: column;
     justify-content: stretch;
 }
+
 .navbar{
     position: fixed;
     top: 0;
@@ -67,6 +68,19 @@ header{
     align-items: center;
     font-weight: bold;
 }
+
+button.navbar-toggle {
+    width: 1.65rem;
+    padding: 0.8rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    float: right;
+}
+.navbar-toggle{
+    border: none;
+    margin-top: -11px;
+}
 .navbar-brand{
     font-weight: bolder;
     color: #88CAF6;
@@ -77,7 +91,9 @@ header{
 .navbar-nav{
     margin: 0.2rem 0 0.6rem 0;
 }
-
+.navbar-collapse{
+    display: none;
+}
 .nav-item{
 padding: 0.6rem 0;
 }
@@ -95,9 +111,8 @@ padding: 0.6rem 0;
     flex: 1;
     flex-direction: column;
     text-align: center;
-    margin-top: 100%;
 }
 @media screen and (min-width: 992px){
-   
+
 }
     
