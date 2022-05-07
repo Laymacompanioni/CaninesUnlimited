@@ -76,6 +76,7 @@ button.navbar-toggle {
     justify-content: space-between;
     align-items: center;
     float: right;
+    background: none;
 }
 .navbar-toggle{
     border: none;
@@ -113,6 +114,32 @@ padding: 0.6rem 0;
     text-align: center;
 }
 @media screen and (min-width: 992px){
-
-}
+    .navbar .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .navbar-brand{
+        font-size: 2rem;
+    }
+    button.navbar-toggle{
+        display: none;
+       
+    }
+    .navbar-collapse{
+        display: block!important;
+    }
+    .navbar-nav{
+        display: flex;
+        margin: 0;
+    }
+    .nav-item{
+        margin-left: 1.8rem;
+    }
     
+    .hero-div h1{
+        font-size: 3.8rem;
+    }
+    
+    
+}
