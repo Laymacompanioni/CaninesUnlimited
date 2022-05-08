@@ -166,7 +166,8 @@ padding: 0.6rem 0;
 section.about {
     background-color: #88CAF6;
     color: white;
-    font-weight:bold ;
+    font-weight:bold;
+    font-size: 1.1rem;
 }
 /*Media Queries */
 @media screen and (min-width: 768px){
