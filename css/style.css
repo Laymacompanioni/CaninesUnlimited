@@ -163,7 +163,11 @@ padding: 0.6rem 0;
     justify-content: stretch;
     font-size: 1.2rem;
 }
-
+section.about {
+    background-color: #88CAF6;
+    color: white;
+    font-weight:bold ;
+}
 /*Media Queries */
 @media screen and (min-width: 768px){
     .detail .row{
