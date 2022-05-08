@@ -1,3 +1,7 @@
+:root{
+    
+    --transition: all 0.5s ease-in-out;
+}
 *{
     font-family: 'Courier New', Courier, monospace;
     padding: 0;
@@ -40,6 +44,9 @@ h1,h2,h3,h4,h5,h6{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+section{
+    padding: 6.5rem 0;
 }
 /* header */
 header{
@@ -113,6 +120,62 @@ padding: 0.6rem 0;
     flex-direction: column;
     text-align: center;
 }
+/* Detail items & About */
+.detail{
+    background-color: #88CAF6;
+}
+#check-mark {
+    width: 20%;
+}
+.detail-items{
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 1px 2px 0 rgba(90, 91, 95, 0.1);
+    -webkit-box-shadow: 0 1px 2px 0 rgba(90, 91, 95, 0.1);
+    -moz-box-shadow: 0 1px 2px 0 rgba(90, 91, 95, 0.1);
+    margin: 2rem 0;
+    padding: 3.5rem 1.5rem;
+    border-radius: 4px;
+    
+    
+}
+.detail-items:hover{
+    -webkit-box-shadow: 0 5px 19px -2px rgb(248, 246, 246);
+    -moz-box-shadow: 0 11px 19px -2px rgba(248, 246, 246, 1);
+    box-shadow: 0 11px 19px -2px rgba(248, 246, 246, 1);
+    transform: translateY(-5px);
+}
+.detail-items h2{
+    font-size: 1.5rem;
+    opacity: 0.8;
+    font-weight: bold;
+    color: #88CAF6;
+ }
+
+.about-hero{
+    background-image: url('/assets/pexels-lumn-406014.jpg');
+    min-height:100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    font-size: 1.2rem;
+}
+
+/*Media Queries */
+@media screen and (min-width: 768px){
+    .detail .row{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    .detail-items{
+        margin: 0;
+    }
+    
+}
 @media screen and (min-width: 992px){
     .navbar .container{
         display: flex;
@@ -124,7 +187,7 @@ padding: 0.6rem 0;
     }
     button.navbar-toggle{
         display: none;
-       
+    
     }
     .navbar-collapse{
         display: block!important;
@@ -140,6 +203,19 @@ padding: 0.6rem 0;
     .hero-div h1{
         font-size: 3.8rem;
     }
-    
+    .about-hero h1{
+        font-size: 3.8rem;
+    }
+}
+@media screen and (min-width: 1200px){
+    .hero-div h1{
+        width: 100%;
+    }
+    .about-hero h1{
+        width: 100%;
+    }
+    .detail .row{
+        grid-template-columns: repeat(3, 1fr);
+    }
     
 }
