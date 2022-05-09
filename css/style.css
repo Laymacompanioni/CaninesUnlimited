@@ -266,3 +266,21 @@ margin: 1.2rem 0;
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
+
+/* login & Account page */
+#formPage{
+    background-color: #88CAF6;
+}
+.header-2{
+    background-image: none;
+    min-height: 0;
+}
+.login-container {
+    width: 400px;
+    max-width: 400px;
+    margin: 1rem;
+    padding: 2rem;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    background: #ffffff;
+}
