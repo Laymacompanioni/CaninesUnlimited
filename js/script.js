@@ -1,4 +1,7 @@
 $(document).ready(function(){
+    // wow initiation
+  
+
     $('#navbar-toggle').click(function(){
         $('.navbar-collapse').slideToggle(400);
     });

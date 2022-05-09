@@ -213,16 +213,7 @@ margin: 1.2rem 0;
     color: #fff;
     text-align: center;
 }
-button{
-    background-color: #fff;
-    color: green;
-    padding: 0.52rem;
-    margin: 1.2rem 0;
-    border: none;
-    padding: 0.8rem 2rem;
-    text-transform: uppercase;
 
-}
 .services{
     background-color: #88CAF6;
 }
@@ -255,10 +246,9 @@ button{
     padding:1.5rem 0 1rem 0;
     line-height: 1.1rem;
 }
- #span{
+
+#span{
     display: block;
-    }
- #span{
     font-size: 1.4rem;
     letter-spacing: 2px;
     color: #B6D98E;
@@ -270,7 +260,73 @@ button{
     color: #5A8CAE;
     font-weight:500;
 }
+/* Contact Form */
 
+.contact .row{
+    margin-top: 2rem;
+}
+.contact .row > div{
+    margin: 2rem 0;
+    padding: 1rem 0;
+}
+.contact .row > div h2{
+    font-size: 1.4rem;
+    font-weight: 300;
+    opacity: 0.9;
+}
+.contact-left form input,
+.contact-left form textarea{
+    width: 100%;
+    font-size: 1.1rem;
+    margin: 0.2rem 0;
+    padding: 0.8rem 0.6rem;
+    border: none;
+    border-bottom: 1.5px solid #88CAF6;
+    outline: 0;
+}
+.contact-left form input::placeholder,
+.contact-left form textarea::placeholder{
+    font-size: 1.1rem;
+    font-weight: 300;
+    opacity: 0.8;
+}
+.contact-left form input:focus,
+.contact-left form textarea:focus{
+    border-color: purple;
+}
+.submit-bttn{
+    margin: 1rem 0;
+    border: none;
+    font-size: 1.3rem;
+    color: #fff;
+    background: #B6D98E;
+    opacity: 0.9;
+    padding: 0.8rem 3.4rem;
+    border-radius: 2rem;
+    transition: var(--transition);
+}
+.submit-bttn:hover{
+    background: #839c66;
+    color: #fff;
+}
+.contact-right div{
+    margin: 2rem 0;
+}
+/* Footer */
+.footer{
+    text-align: center;
+    background: #88CAF6;
+    color: #fff;
+    padding: 2rem 0;
+    height: 50vh;
+}
+.footer .text{
+    opacity: 0.8;
+}
+
+.footer-links a:hover{
+    background: var(--mount-meadow);
+}
 
 
 /*Media Queries */
@@ -299,9 +355,24 @@ button{
     .service-item{
         margin: 0;
     }
-    
+    .contact .row{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+    .contact-right > div:first-child{
+        margin: 0;
+    }
 }
 @media screen and (min-width: 992px){
+     /* navbar change */
+     .cng-navbar{
+        -webkit-box-shadow: 0 2px 5px 0 rgba(207, 205, 207, 0.3);
+        -moz-box-shadow: 0 2px 5px 0 rgba(207, 205, 207, 0.3);
+        box-shadow: 0 2px 5px 0 rgba(207, 205, 207, 0.3);
+        margin-top: 0;
+        background: #fff;
+    }
     .navbar .container{
         display: flex;
         align-items: center;
@@ -349,12 +420,13 @@ button{
     .services .row-2{
         grid-template-columns: repeat(4, 1fr);
     }
+    .contact .row{
+        column-gap: 4rem;
+    }
+    .contact-right{
+        padding: 4rem!important;
+    }
 }
-/* @media screen and (min-width: 300px){
-    .services button{
-        width: 100%;
-    } 
-} */
 
 /* login & Account page */
 #formPage{
