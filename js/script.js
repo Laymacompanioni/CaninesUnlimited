@@ -1,6 +1,5 @@
 $(document).ready(function(){
     // wow initiation
-  
 
     $('#navbar-toggle').click(function(){
         $('.navbar-collapse').slideToggle(400);
@@ -15,5 +14,4 @@ $(document).ready(function(){
             $('.navbar').removeClass('cng-navbar');
         }
     });
-
 });

@@ -429,6 +429,9 @@ margin: 1.2rem 0;
 }
 
 /* login & Account page */
+a.form__link {
+    color: green;
+}
 #formPage{
     background-color: #88CAF6;
 }
@@ -437,10 +440,91 @@ margin: 1.2rem 0;
     min-height: 0;
 }
 .login-container {
-    width: 400px;
-    max-width: 400px;
-    margin: 1rem;
+    width: 500px;
+    height: 500px;
+    max-width: 500px;
+    max-height: 500px;
+    margin: 1rem auto;
     padding: 2rem;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
     background: #ffffff;
+}
+.form__title{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.form--hidden{
+    display: none;
+}
+form#login > *:first-child{
+    margin-top: 0;
+}
+form#login > *:last-child{
+    margin-bottom: 0;
+}
+.form__message{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.form__message--success{
+    color: #84bf42;
+}
+.form__message--error{
+    color: red;
+}
+.form__input-group{
+    margin-bottom: 1rem;
+}
+.form__input{
+    display: block;
+    width: 100%;
+    font-size: 1.1rem;
+    margin: 0.2rem 0;
+    padding: 0.8rem 0.6rem;
+    border: none;
+    border-bottom: 1.5px solid #88CAF6;
+    outline: 0px;
+}
+.form__input:focus{
+    background: #ffffff;
+    outline: auto;
+}
+.form__input--error{
+    color: red;
+    border-color: red;
+}
+.form__input-error-message{
+    color: red;
+    margin-top: 1rem;
+}
+/*form buttons and Links*/
+.form__button{
+    margin: 1rem 0;
+    border: none;
+    font-size: 1.3rem;
+    color: #fff;
+    background: #B6D98E;
+    opacity: 0.9;
+    padding: 0.8rem 3.4rem;
+    border-radius: 2rem;
+    transition: var(--transition);
+    cursor: pointer;
+    width: 100%;
+}
+.form__button:hover{
+    background: #839c66;
+    color: #fff;
+}
+.form__button:active{
+    transform: scale(0.98);
+}
+.form__text{
+    text-align: center;
+}
+a.form__link{
+    color: #5A8CAE;
+    cursor: pointer;
+}
+a.form__link:hover{
+    text-decoration: underline;
 }
