@@ -528,3 +528,22 @@ a.form__link{
 a.form__link:hover{
     text-decoration: underline;
 }
+/*Booking Form*/
+/* .booking-container {
+    width: 600px;
+    height: 600px;
+    max-width: 600px;
+    max-height: 600px;
+    margin: 1rem auto;
+    padding: 2rem;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    background: #ffffff;
+}
+input#date {
+    outline: 2px solid #88CAF6;
+    border: none;
+}
+input#appt {
+    outline: 2px solid #88CAF6;
+    border: none;
+} */
