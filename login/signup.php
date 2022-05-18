@@ -1,3 +1,9 @@
+<?php
+session_start();
+    include("connections.php");
+    include("funcations.php");
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login/Create Accounts</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="resources/normalize.css">
 </head>
 <body id="formPage">
@@ -16,11 +22,11 @@
         <div class="container">
             
             <div class="logo-brand-toggle">
-                <a href="index.html" class="navbar-brand">
+                <a href="../index.html" class="navbar-brand">
                     Canines <span>Unlimited</span>
                     </a>
                     <button type="button" class="navbar-toggle" id="navbar-toggle">
-                        <img class="menu-bttn" src="/assets/menu.png">
+                        <img class="menu-bttn" src="../assets/menu.png">
                     </button>
             </div>
             <div class = "navbar-collapse">
@@ -45,58 +51,41 @@
             </nav>
             
 </header>
-<!-- appt Form -->
+<!-- login Form -->
 
-<section class="appt">
-    <div class="booking-container">
-        <form class="form  " id="createAccount">
-            <h1 class="form__title">Book Your Appointment Now!</h1>
-            <p class="form__info">Please fill out the form below to make an appointment</p>
-
+<section class="signup">
+    <div class="signup-container">
+    <form method ="post" class="form" id="createAccount">
+            <h1 class="form__title">Create Account</h1>
             <div class="form__message form__message--error"></div>
             <div class="form__input-group">
-                <label for="cars">Choose a Service:</label>
-  <select name="cars" id="cars">
-    <option value="Bath + Full Haircut">Bath & Full Haircut</option>
-    <option value="Bath + Brush">Bath & Brush</option>
-    <option value="Puppy Bath + Groom">Puppy Bath & Groom</option>
-    <option value="Puppy Bath + Brush">Puppy Bath & Brush</option>
-  </select>
+                <input type="text" class="form__input" id="signupUsername" autofocus placeholder="Username">
                 <div class="form__input-error-message"></div>
             </div>
             <div class="form__input-group">
-                <input type="text" class="form__input" id="signupUsername" autofocus placeholder="First Name:">
+                <input type="text" class="form__input" autofocus placeholder="Email">
                 <div class="form__input-error-message"></div>
             </div>
             <div class="form__input-group">
-                <input type="text" class="form__input" autofocus placeholder="Last Name:">
+                <input type="password" class="form__input " autofocus placeholder="Password">
                 <div class="form__input-error-message"></div>
             </div>
             <div class="form__input-group">
-                <input type="text" class="form__input" autofocus placeholder="Email:">
+                <input type="password" class="form__input " autofocus placeholder="Confirm Password">
                 <div class="form__input-error-message"></div>
             </div>
-            <div class="form__input-group">
-                <input type="text" class="form__input" autofocus placeholder="Phone Number:">
-                <div class="form__input-error-message"></div>
-            </div>
-             <div class="form__input-group">
-                <label for="date">Date:</label>
-                <input type="date" id="date" name="date">
-                <div class="form__input-error-message"></div>
-            </div>
-            <div class="form__input-group">
-                <label for="appt">Time:</label>
-                <input type="time" id="appt" name="appt" min="09:00" max="18:00" required>                
-                <div class="form__input-error-message"></div>
-            </div>
-            <button class="form__button" type="submit">Submit</button>
+            <button class="form__button" type="submit">Continue</button>
             <br>
+            <p class="form__text">
+                <a class="form__link" href="login.php" id="linkLogin">Already have an account? Sign In</a>
+            </p>
         </form>
     </div>
 </section>
 <script src="resources/jquery-3.6.0.js"></script>
 <!-- custom js -->
 <!-- <script src="js/account.js"></script> -->
+<script src="../js/script.js"></script>
+
 </body>
 </html>
